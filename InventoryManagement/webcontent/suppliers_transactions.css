@@ -1,0 +1,77 @@
+/* General body styling */
+body {
+    font-family: Monospace;
+    background-color: #f8f9fa; /* Light background for better contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading styling */
+h1 {
+    color: #343a40; /* Dark grey color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove double borders */
+    margin-top: 20px;
+}
+
+/* Table header styling */
+th {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 12px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+/* Table cell styling */
+td {
+    padding: 12px;
+    border: 1px solid #dee2e6; /* Light grey border */
+    text-align: left; /* Align text to the left */
+}
+
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+}
+
+/* Links styling */
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color for links */
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size for tables */
+    }
+
+    th, td {
+        padding: 8px; /* Less padding for smaller screens */
+    }
+}

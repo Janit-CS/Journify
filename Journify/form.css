@@ -1,0 +1,111 @@
+*{
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: violet;
+    border: 1px solid black;
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    border: 12px solid black;
+}
+.container h1{
+    font-size: 50px;
+    color:red;
+    font: weight 1000px;;
+    text-align: center;
+}
+.container .regform{
+    margin-top: 30px;
+}
+.regform .input_box{
+    width:100%;
+    margin-top: 20px;
+}
+.regform .input_box label{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.regform :where(.input_box input, .input_box .select_box select){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color:gray;
+    margin-top: 8px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.regform .column{
+    display: flex;
+    column-gap: 15px;
+}
+.gender_box .gender_option{
+    margin-top: 20px;
+}
+.gender_box h1{
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.gender_box .gender_option{
+    display: flex;
+    column-gap: 30px;
+    margin-right: 50px;
+}
+.gender_box :where(.gender_option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.gender_option .gender{
+    column-gap: 5px;
+    cursor: pointer;
+    margin-right:100px;
+}
+.gender_box :where(.gender input,.gender label)
+{
+    cursor: pointer;
+}
+.input_box :where(input, .select_box){
+    margin-top: 20px;
+}
+.input_box .select_box{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: grey;
+    font-size: 1rem;
+}
+button{
+    height: 55px;
+    width: 100%;
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+    transition:  all 0.5s ease;
+    background-color:black;
+    margin-top: 20px;
+}
+button:hover{
+    background-color:whitesmoke;
+}
